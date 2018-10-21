@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F21807AB217CA6CF00E8567C /* TRTChatBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807AA217CA6CF00E8567C /* TRTChatBaseCell.m */; };
+		F21807AE217CA97700E8567C /* TRTChatTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807AD217CA97700E8567C /* TRTChatTimeCell.m */; };
+		F21807B1217CA98800E8567C /* TRTChatTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807B0217CA98800E8567C /* TRTChatTextCell.m */; };
+		F21807B4217CA99700E8567C /* TRTChatImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807B3217CA99700E8567C /* TRTChatImageCell.m */; };
+		F21807B7217CA9B100E8567C /* TRTChatFileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807B6217CA9B100E8567C /* TRTChatFileCell.m */; };
+		F21807D3217CAB3E00E8567C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807BA217CAB3E00E8567C /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		F21807D4217CAB3E00E8567C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807C3217CAB3E00E8567C /* ViewController+MASAdditions.m */; };
+		F21807D5217CAB3E00E8567C /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807C7217CAB3E00E8567C /* MASCompositeConstraint.m */; };
+		F21807D6217CAB3E00E8567C /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807C8217CAB3E00E8567C /* MASConstraintMaker.m */; };
+		F21807D7217CAB3E00E8567C /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807C9217CAB3E00E8567C /* MASLayoutConstraint.m */; };
+		F21807D8217CAB3E00E8567C /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807CA217CAB3E00E8567C /* NSArray+MASAdditions.m */; };
+		F21807D9217CAB3E00E8567C /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807CB217CAB3E00E8567C /* View+MASAdditions.m */; };
+		F21807DA217CAB3E00E8567C /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807CE217CAB3E00E8567C /* MASConstraint.m */; };
+		F21807DB217CAB3E00E8567C /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807D0217CAB3E00E8567C /* MASViewConstraint.m */; };
+		F21807DC217CAB3E00E8567C /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807D1217CAB3E00E8567C /* MASViewAttribute.m */; };
+		F21807E3217CB18900E8567C /* TRTChatCellBaseAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807E2217CB18900E8567C /* TRTChatCellBaseAdapter.m */; };
+		F21807E6217CB20300E8567C /* TRTChatTimeCellAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807E5217CB20300E8567C /* TRTChatTimeCellAdapter.m */; };
+		F21807E9217CB28300E8567C /* TRTChatTextCellAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807E8217CB28300E8567C /* TRTChatTextCellAdapter.m */; };
+		F21807EC217CB2CD00E8567C /* TRTChatImageCellAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807EB217CB2CD00E8567C /* TRTChatImageCellAdapter.m */; };
+		F21807F1217CB35400E8567C /* TRTChatFileCellAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807F0217CB35400E8567C /* TRTChatFileCellAdapter.m */; };
+		F2180800217CBA7900E8567C /* TRTChatContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F21807FF217CBA7900E8567C /* TRTChatContentView.m */; };
+		F2180803217CBAF800E8567C /* TRTChatTableCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F2180802217CBAF800E8567C /* TRTChatTableCellFactory.m */; };
+		F2180806217CC0C100E8567C /* TRTChatContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F2180805217CC0C100E8567C /* TRTChatContext.m */; };
+		F2180809217CC0F800E8567C /* TRTChatLogicHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = F2180808217CC0F800E8567C /* TRTChatLogicHelp.m */; };
+		F218080C217CC11700E8567C /* TRTChatNetworkHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = F218080B217CC11700E8567C /* TRTChatNetworkHelp.m */; };
+		F220E307217C9197002632E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F220E306217C9197002632E9 /* AppDelegate.m */; };
+		F220E30A217C9198002632E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F220E309217C9198002632E9 /* ViewController.m */; };
+		F220E30D217C9198002632E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F220E30B217C9198002632E9 /* Main.storyboard */; };
+		F220E30F217C919A002632E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F220E30E217C919A002632E9 /* Assets.xcassets */; };
+		F220E312217C919A002632E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F220E310217C919A002632E9 /* LaunchScreen.storyboard */; };
+		F220E315217C919A002632E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F220E314217C919A002632E9 /* main.m */; };
+		F220E31F217C919A002632E9 /* AdapterFrameDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F220E31E217C919A002632E9 /* AdapterFrameDemoTests.m */; };
+		F220E32A217C919A002632E9 /* AdapterFrameDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F220E329217C919A002632E9 /* AdapterFrameDemoUITests.m */; };
+		F220E340217C9483002632E9 /* TRTChatMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F220E33F217C9483002632E9 /* TRTChatMainModel.m */; };
+		F220E344217C94B6002632E9 /* TRTChatCellBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F220E343217C94B6002632E9 /* TRTChatCellBaseModel.m */; };
+		F220E347217C94FA002632E9 /* TRTChatTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F220E346217C94FA002632E9 /* TRTChatTextCellModel.m */; };
+		F220E34A217C9518002632E9 /* TRTChatImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F220E349217C9518002632E9 /* TRTChatImageCellModel.m */; };
+		F220E34D217C9531002632E9 /* TRTChatFileCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F220E34C217C9531002632E9 /* TRTChatFileCellModel.m */; };
+		F220E353217C967D002632E9 /* TRTChatTimeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F220E352217C967D002632E9 /* TRTChatTimeCellModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F220E31B217C919A002632E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F220E2FA217C9197002632E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F220E301217C9197002632E9;
+			remoteInfo = AdapterFrameDemo;
+		};
+		F220E326217C919A002632E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F220E2FA217C9197002632E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F220E301217C9197002632E9;
+			remoteInfo = AdapterFrameDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F21807A9217CA6CF00E8567C /* TRTChatBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatBaseCell.h; sourceTree = "<group>"; };
+		F21807AA217CA6CF00E8567C /* TRTChatBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatBaseCell.m; sourceTree = "<group>"; };
+		F21807AC217CA97700E8567C /* TRTChatTimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatTimeCell.h; sourceTree = "<group>"; };
+		F21807AD217CA97700E8567C /* TRTChatTimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatTimeCell.m; sourceTree = "<group>"; };
+		F21807AF217CA98800E8567C /* TRTChatTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatTextCell.h; sourceTree = "<group>"; };
+		F21807B0217CA98800E8567C /* TRTChatTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatTextCell.m; sourceTree = "<group>"; };
+		F21807B2217CA99700E8567C /* TRTChatImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatImageCell.h; sourceTree = "<group>"; };
+		F21807B3217CA99700E8567C /* TRTChatImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatImageCell.m; sourceTree = "<group>"; };
+		F21807B5217CA9B100E8567C /* TRTChatFileCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatFileCell.h; sourceTree = "<group>"; };
+		F21807B6217CA9B100E8567C /* TRTChatFileCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatFileCell.m; sourceTree = "<group>"; };
+		F21807B9217CAB3E00E8567C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		F21807BA217CAB3E00E8567C /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		F21807BB217CAB3E00E8567C /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		F21807BC217CAB3E00E8567C /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		F21807BD217CAB3E00E8567C /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		F21807BE217CAB3E00E8567C /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		F21807BF217CAB3E00E8567C /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		F21807C0217CAB3E00E8567C /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		F21807C1217CAB3E00E8567C /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		F21807C2217CAB3E00E8567C /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		F21807C3217CAB3E00E8567C /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		F21807C4217CAB3E00E8567C /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		F21807C5217CAB3E00E8567C /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		F21807C6217CAB3E00E8567C /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		F21807C7217CAB3E00E8567C /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		F21807C8217CAB3E00E8567C /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		F21807C9217CAB3E00E8567C /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		F21807CA217CAB3E00E8567C /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		F21807CB217CAB3E00E8567C /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		F21807CC217CAB3E00E8567C /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		F21807CD217CAB3E00E8567C /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		F21807CE217CAB3E00E8567C /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		F21807CF217CAB3E00E8567C /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		F21807D0217CAB3E00E8567C /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		F21807D1217CAB3E00E8567C /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		F21807D2217CAB3E00E8567C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F21807E1217CB18900E8567C /* TRTChatCellBaseAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatCellBaseAdapter.h; sourceTree = "<group>"; };
+		F21807E2217CB18900E8567C /* TRTChatCellBaseAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatCellBaseAdapter.m; sourceTree = "<group>"; };
+		F21807E4217CB20300E8567C /* TRTChatTimeCellAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatTimeCellAdapter.h; sourceTree = "<group>"; };
+		F21807E5217CB20300E8567C /* TRTChatTimeCellAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatTimeCellAdapter.m; sourceTree = "<group>"; };
+		F21807E7217CB28300E8567C /* TRTChatTextCellAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatTextCellAdapter.h; sourceTree = "<group>"; };
+		F21807E8217CB28300E8567C /* TRTChatTextCellAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatTextCellAdapter.m; sourceTree = "<group>"; };
+		F21807EA217CB2CD00E8567C /* TRTChatImageCellAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatImageCellAdapter.h; sourceTree = "<group>"; };
+		F21807EB217CB2CD00E8567C /* TRTChatImageCellAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatImageCellAdapter.m; sourceTree = "<group>"; };
+		F21807EF217CB35400E8567C /* TRTChatFileCellAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatFileCellAdapter.h; sourceTree = "<group>"; };
+		F21807F0217CB35400E8567C /* TRTChatFileCellAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatFileCellAdapter.m; sourceTree = "<group>"; };
+		F21807FE217CBA7900E8567C /* TRTChatContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatContentView.h; sourceTree = "<group>"; };
+		F21807FF217CBA7900E8567C /* TRTChatContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatContentView.m; sourceTree = "<group>"; };
+		F2180801217CBAF800E8567C /* TRTChatTableCellFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatTableCellFactory.h; sourceTree = "<group>"; };
+		F2180802217CBAF800E8567C /* TRTChatTableCellFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatTableCellFactory.m; sourceTree = "<group>"; };
+		F2180804217CC0C100E8567C /* TRTChatContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatContext.h; sourceTree = "<group>"; };
+		F2180805217CC0C100E8567C /* TRTChatContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatContext.m; sourceTree = "<group>"; };
+		F2180807217CC0F800E8567C /* TRTChatLogicHelp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatLogicHelp.h; sourceTree = "<group>"; };
+		F2180808217CC0F800E8567C /* TRTChatLogicHelp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatLogicHelp.m; sourceTree = "<group>"; };
+		F218080A217CC11700E8567C /* TRTChatNetworkHelp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatNetworkHelp.h; sourceTree = "<group>"; };
+		F218080B217CC11700E8567C /* TRTChatNetworkHelp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatNetworkHelp.m; sourceTree = "<group>"; };
+		F218080D217CC66400E8567C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F220E302217C9197002632E9 /* AdapterFrameDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdapterFrameDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F220E305217C9197002632E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F220E306217C9197002632E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F220E308217C9198002632E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F220E309217C9198002632E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F220E30C217C9198002632E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F220E30E217C919A002632E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F220E311217C919A002632E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F220E314217C919A002632E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F220E31A217C919A002632E9 /* AdapterFrameDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdapterFrameDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F220E31E217C919A002632E9 /* AdapterFrameDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterFrameDemoTests.m; sourceTree = "<group>"; };
+		F220E320217C919A002632E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F220E325217C919A002632E9 /* AdapterFrameDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdapterFrameDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F220E329217C919A002632E9 /* AdapterFrameDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterFrameDemoUITests.m; sourceTree = "<group>"; };
+		F220E32B217C919A002632E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F220E33E217C9483002632E9 /* TRTChatMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatMainModel.h; sourceTree = "<group>"; };
+		F220E33F217C9483002632E9 /* TRTChatMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatMainModel.m; sourceTree = "<group>"; };
+		F220E342217C94B6002632E9 /* TRTChatCellBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatCellBaseModel.h; sourceTree = "<group>"; };
+		F220E343217C94B6002632E9 /* TRTChatCellBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatCellBaseModel.m; sourceTree = "<group>"; };
+		F220E345217C94FA002632E9 /* TRTChatTextCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatTextCellModel.h; sourceTree = "<group>"; };
+		F220E346217C94FA002632E9 /* TRTChatTextCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatTextCellModel.m; sourceTree = "<group>"; };
+		F220E348217C9518002632E9 /* TRTChatImageCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatImageCellModel.h; sourceTree = "<group>"; };
+		F220E349217C9518002632E9 /* TRTChatImageCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatImageCellModel.m; sourceTree = "<group>"; };
+		F220E34B217C9530002632E9 /* TRTChatFileCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatFileCellModel.h; sourceTree = "<group>"; };
+		F220E34C217C9531002632E9 /* TRTChatFileCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatFileCellModel.m; sourceTree = "<group>"; };
+		F220E351217C967D002632E9 /* TRTChatTimeCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTChatTimeCellModel.h; sourceTree = "<group>"; };
+		F220E352217C967D002632E9 /* TRTChatTimeCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTChatTimeCellModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F220E2FF217C9197002632E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F220E317217C919A002632E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F220E322217C919A002632E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F21807A8217CA68D00E8567C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F21807A9217CA6CF00E8567C /* TRTChatBaseCell.h */,
+				F21807AA217CA6CF00E8567C /* TRTChatBaseCell.m */,
+				F21807AC217CA97700E8567C /* TRTChatTimeCell.h */,
+				F21807AD217CA97700E8567C /* TRTChatTimeCell.m */,
+				F21807AF217CA98800E8567C /* TRTChatTextCell.h */,
+				F21807B0217CA98800E8567C /* TRTChatTextCell.m */,
+				F21807B2217CA99700E8567C /* TRTChatImageCell.h */,
+				F21807B3217CA99700E8567C /* TRTChatImageCell.m */,
+				F21807B5217CA9B100E8567C /* TRTChatFileCell.h */,
+				F21807B6217CA9B100E8567C /* TRTChatFileCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F21807B8217CAB3E00E8567C /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				F21807B9217CAB3E00E8567C /* MASCompositeConstraint.h */,
+				F21807BA217CAB3E00E8567C /* NSLayoutConstraint+MASDebugAdditions.m */,
+				F21807BB217CAB3E00E8567C /* MASConstraint+Private.h */,
+				F21807BC217CAB3E00E8567C /* MASLayoutConstraint.h */,
+				F21807BD217CAB3E00E8567C /* NSArray+MASShorthandAdditions.h */,
+				F21807BE217CAB3E00E8567C /* MASConstraintMaker.h */,
+				F21807BF217CAB3E00E8567C /* View+MASAdditions.h */,
+				F21807C0217CAB3E00E8567C /* NSArray+MASAdditions.h */,
+				F21807C1217CAB3E00E8567C /* MASUtilities.h */,
+				F21807C2217CAB3E00E8567C /* MASViewAttribute.h */,
+				F21807C3217CAB3E00E8567C /* ViewController+MASAdditions.m */,
+				F21807C4217CAB3E00E8567C /* MASViewConstraint.h */,
+				F21807C5217CAB3E00E8567C /* MASConstraint.h */,
+				F21807C6217CAB3E00E8567C /* NSLayoutConstraint+MASDebugAdditions.h */,
+				F21807C7217CAB3E00E8567C /* MASCompositeConstraint.m */,
+				F21807C8217CAB3E00E8567C /* MASConstraintMaker.m */,
+				F21807C9217CAB3E00E8567C /* MASLayoutConstraint.m */,
+				F21807CA217CAB3E00E8567C /* NSArray+MASAdditions.m */,
+				F21807CB217CAB3E00E8567C /* View+MASAdditions.m */,
+				F21807CC217CAB3E00E8567C /* View+MASShorthandAdditions.h */,
+				F21807CD217CAB3E00E8567C /* Masonry.h */,
+				F21807CE217CAB3E00E8567C /* MASConstraint.m */,
+				F21807CF217CAB3E00E8567C /* ViewController+MASAdditions.h */,
+				F21807D0217CAB3E00E8567C /* MASViewConstraint.m */,
+				F21807D1217CAB3E00E8567C /* MASViewAttribute.m */,
+				F21807D2217CAB3E00E8567C /* Info.plist */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		F220E2F9217C9197002632E9 = {
+			isa = PBXGroup;
+			children = (
+				F220E304217C9197002632E9 /* AdapterFrameDemo */,
+				F220E31D217C919A002632E9 /* AdapterFrameDemoTests */,
+				F220E328217C919A002632E9 /* AdapterFrameDemoUITests */,
+				F220E303217C9197002632E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F220E303217C9197002632E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F220E302217C9197002632E9 /* AdapterFrameDemo.app */,
+				F220E31A217C919A002632E9 /* AdapterFrameDemoTests.xctest */,
+				F220E325217C919A002632E9 /* AdapterFrameDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F220E304217C9197002632E9 /* AdapterFrameDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F21807B8217CAB3E00E8567C /* Masonry */,
+				F220E305217C9197002632E9 /* AppDelegate.h */,
+				F220E306217C9197002632E9 /* AppDelegate.m */,
+				F220E337217C9341002632E9 /* Chat */,
+				F220E30B217C9198002632E9 /* Main.storyboard */,
+				F220E30E217C919A002632E9 /* Assets.xcassets */,
+				F220E310217C919A002632E9 /* LaunchScreen.storyboard */,
+				F218080D217CC66400E8567C /* Info.plist */,
+				F220E314217C919A002632E9 /* main.m */,
+			);
+			path = AdapterFrameDemo;
+			sourceTree = "<group>";
+		};
+		F220E31D217C919A002632E9 /* AdapterFrameDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F220E31E217C919A002632E9 /* AdapterFrameDemoTests.m */,
+				F220E320217C919A002632E9 /* Info.plist */,
+			);
+			path = AdapterFrameDemoTests;
+			sourceTree = "<group>";
+		};
+		F220E328217C919A002632E9 /* AdapterFrameDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F220E329217C919A002632E9 /* AdapterFrameDemoUITests.m */,
+				F220E32B217C919A002632E9 /* Info.plist */,
+			);
+			path = AdapterFrameDemoUITests;
+			sourceTree = "<group>";
+		};
+		F220E337217C9341002632E9 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F220E33C217C93D5002632E9 /* Contexts */,
+				F220E33D217C93E9002632E9 /* LogicTools */,
+				F220E33B217C938B002632E9 /* CellAdapters */,
+				F220E33A217C9383002632E9 /* Models */,
+				F220E339217C937A002632E9 /* Views */,
+				F220E338217C9367002632E9 /* ViewController */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		F220E338217C9367002632E9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F220E308217C9198002632E9 /* ViewController.h */,
+				F220E309217C9198002632E9 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F220E339217C937A002632E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F21807A8217CA68D00E8567C /* Cells */,
+				F21807FE217CBA7900E8567C /* TRTChatContentView.h */,
+				F21807FF217CBA7900E8567C /* TRTChatContentView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F220E33A217C9383002632E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F220E341217C948F002632E9 /* CellModels */,
+				F220E33E217C9483002632E9 /* TRTChatMainModel.h */,
+				F220E33F217C9483002632E9 /* TRTChatMainModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F220E33B217C938B002632E9 /* CellAdapters */ = {
+			isa = PBXGroup;
+			children = (
+				F21807E1217CB18900E8567C /* TRTChatCellBaseAdapter.h */,
+				F21807E2217CB18900E8567C /* TRTChatCellBaseAdapter.m */,
+				F21807E4217CB20300E8567C /* TRTChatTimeCellAdapter.h */,
+				F21807E5217CB20300E8567C /* TRTChatTimeCellAdapter.m */,
+				F21807E7217CB28300E8567C /* TRTChatTextCellAdapter.h */,
+				F21807E8217CB28300E8567C /* TRTChatTextCellAdapter.m */,
+				F21807EA217CB2CD00E8567C /* TRTChatImageCellAdapter.h */,
+				F21807EB217CB2CD00E8567C /* TRTChatImageCellAdapter.m */,
+				F21807EF217CB35400E8567C /* TRTChatFileCellAdapter.h */,
+				F21807F0217CB35400E8567C /* TRTChatFileCellAdapter.m */,
+			);
+			path = CellAdapters;
+			sourceTree = "<group>";
+		};
+		F220E33C217C93D5002632E9 /* Contexts */ = {
+			isa = PBXGroup;
+			children = (
+				F2180804217CC0C100E8567C /* TRTChatContext.h */,
+				F2180805217CC0C100E8567C /* TRTChatContext.m */,
+				F2180807217CC0F800E8567C /* TRTChatLogicHelp.h */,
+				F2180808217CC0F800E8567C /* TRTChatLogicHelp.m */,
+				F218080A217CC11700E8567C /* TRTChatNetworkHelp.h */,
+				F218080B217CC11700E8567C /* TRTChatNetworkHelp.m */,
+			);
+			path = Contexts;
+			sourceTree = "<group>";
+		};
+		F220E33D217C93E9002632E9 /* LogicTools */ = {
+			isa = PBXGroup;
+			children = (
+				F2180801217CBAF800E8567C /* TRTChatTableCellFactory.h */,
+				F2180802217CBAF800E8567C /* TRTChatTableCellFactory.m */,
+			);
+			path = LogicTools;
+			sourceTree = "<group>";
+		};
+		F220E341217C948F002632E9 /* CellModels */ = {
+			isa = PBXGroup;
+			children = (
+				F220E342217C94B6002632E9 /* TRTChatCellBaseModel.h */,
+				F220E343217C94B6002632E9 /* TRTChatCellBaseModel.m */,
+				F220E351217C967D002632E9 /* TRTChatTimeCellModel.h */,
+				F220E352217C967D002632E9 /* TRTChatTimeCellModel.m */,
+				F220E345217C94FA002632E9 /* TRTChatTextCellModel.h */,
+				F220E346217C94FA002632E9 /* TRTChatTextCellModel.m */,
+				F220E348217C9518002632E9 /* TRTChatImageCellModel.h */,
+				F220E349217C9518002632E9 /* TRTChatImageCellModel.m */,
+				F220E34B217C9530002632E9 /* TRTChatFileCellModel.h */,
+				F220E34C217C9531002632E9 /* TRTChatFileCellModel.m */,
+			);
+			path = CellModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F220E301217C9197002632E9 /* AdapterFrameDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F220E32E217C919A002632E9 /* Build configuration list for PBXNativeTarget "AdapterFrameDemo" */;
+			buildPhases = (
+				F220E2FE217C9197002632E9 /* Sources */,
+				F220E2FF217C9197002632E9 /* Frameworks */,
+				F220E300217C9197002632E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdapterFrameDemo;
+			productName = AdapterFrameDemo;
+			productReference = F220E302217C9197002632E9 /* AdapterFrameDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F220E319217C919A002632E9 /* AdapterFrameDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F220E331217C919A002632E9 /* Build configuration list for PBXNativeTarget "AdapterFrameDemoTests" */;
+			buildPhases = (
+				F220E316217C919A002632E9 /* Sources */,
+				F220E317217C919A002632E9 /* Frameworks */,
+				F220E318217C919A002632E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F220E31C217C919A002632E9 /* PBXTargetDependency */,
+			);
+			name = AdapterFrameDemoTests;
+			productName = AdapterFrameDemoTests;
+			productReference = F220E31A217C919A002632E9 /* AdapterFrameDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F220E324217C919A002632E9 /* AdapterFrameDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F220E334217C919A002632E9 /* Build configuration list for PBXNativeTarget "AdapterFrameDemoUITests" */;
+			buildPhases = (
+				F220E321217C919A002632E9 /* Sources */,
+				F220E322217C919A002632E9 /* Frameworks */,
+				F220E323217C919A002632E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F220E327217C919A002632E9 /* PBXTargetDependency */,
+			);
+			name = AdapterFrameDemoUITests;
+			productName = AdapterFrameDemoUITests;
+			productReference = F220E325217C919A002632E9 /* AdapterFrameDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F220E2FA217C9197002632E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = wangyongkang;
+				TargetAttributes = {
+					F220E301217C9197002632E9 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F220E319217C919A002632E9 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = F220E301217C9197002632E9;
+					};
+					F220E324217C919A002632E9 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = F220E301217C9197002632E9;
+					};
+				};
+			};
+			buildConfigurationList = F220E2FD217C9197002632E9 /* Build configuration list for PBXProject "AdapterFrameDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F220E2F9217C9197002632E9;
+			productRefGroup = F220E303217C9197002632E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F220E301217C9197002632E9 /* AdapterFrameDemo */,
+				F220E319217C919A002632E9 /* AdapterFrameDemoTests */,
+				F220E324217C919A002632E9 /* AdapterFrameDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F220E300217C9197002632E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F220E312217C919A002632E9 /* LaunchScreen.storyboard in Resources */,
+				F220E30F217C919A002632E9 /* Assets.xcassets in Resources */,
+				F220E30D217C9198002632E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F220E318217C919A002632E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F220E323217C919A002632E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F220E2FE217C9197002632E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F218080C217CC11700E8567C /* TRTChatNetworkHelp.m in Sources */,
+				F21807B7217CA9B100E8567C /* TRTChatFileCell.m in Sources */,
+				F21807B4217CA99700E8567C /* TRTChatImageCell.m in Sources */,
+				F21807D4217CAB3E00E8567C /* ViewController+MASAdditions.m in Sources */,
+				F21807E9217CB28300E8567C /* TRTChatTextCellAdapter.m in Sources */,
+				F21807F1217CB35400E8567C /* TRTChatFileCellAdapter.m in Sources */,
+				F220E30A217C9198002632E9 /* ViewController.m in Sources */,
+				F2180809217CC0F800E8567C /* TRTChatLogicHelp.m in Sources */,
+				F220E353217C967D002632E9 /* TRTChatTimeCellModel.m in Sources */,
+				F21807EC217CB2CD00E8567C /* TRTChatImageCellAdapter.m in Sources */,
+				F21807E3217CB18900E8567C /* TRTChatCellBaseAdapter.m in Sources */,
+				F21807DC217CAB3E00E8567C /* MASViewAttribute.m in Sources */,
+				F2180806217CC0C100E8567C /* TRTChatContext.m in Sources */,
+				F21807D7217CAB3E00E8567C /* MASLayoutConstraint.m in Sources */,
+				F21807D6217CAB3E00E8567C /* MASConstraintMaker.m in Sources */,
+				F21807DB217CAB3E00E8567C /* MASViewConstraint.m in Sources */,
+				F2180803217CBAF800E8567C /* TRTChatTableCellFactory.m in Sources */,
+				F220E340217C9483002632E9 /* TRTChatMainModel.m in Sources */,
+				F21807E6217CB20300E8567C /* TRTChatTimeCellAdapter.m in Sources */,
+				F220E315217C919A002632E9 /* main.m in Sources */,
+				F220E347217C94FA002632E9 /* TRTChatTextCellModel.m in Sources */,
+				F220E34D217C9531002632E9 /* TRTChatFileCellModel.m in Sources */,
+				F21807D3217CAB3E00E8567C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				F21807D8217CAB3E00E8567C /* NSArray+MASAdditions.m in Sources */,
+				F21807D5217CAB3E00E8567C /* MASCompositeConstraint.m in Sources */,
+				F21807AE217CA97700E8567C /* TRTChatTimeCell.m in Sources */,
+				F220E34A217C9518002632E9 /* TRTChatImageCellModel.m in Sources */,
+				F21807DA217CAB3E00E8567C /* MASConstraint.m in Sources */,
+				F21807AB217CA6CF00E8567C /* TRTChatBaseCell.m in Sources */,
+				F2180800217CBA7900E8567C /* TRTChatContentView.m in Sources */,
+				F220E307217C9197002632E9 /* AppDelegate.m in Sources */,
+				F220E344217C94B6002632E9 /* TRTChatCellBaseModel.m in Sources */,
+				F21807B1217CA98800E8567C /* TRTChatTextCell.m in Sources */,
+				F21807D9217CAB3E00E8567C /* View+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F220E316217C919A002632E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F220E31F217C919A002632E9 /* AdapterFrameDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F220E321217C919A002632E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F220E32A217C919A002632E9 /* AdapterFrameDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F220E31C217C919A002632E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F220E301217C9197002632E9 /* AdapterFrameDemo */;
+			targetProxy = F220E31B217C919A002632E9 /* PBXContainerItemProxy */;
+		};
+		F220E327217C919A002632E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F220E301217C9197002632E9 /* AdapterFrameDemo */;
+			targetProxy = F220E326217C919A002632E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F220E30B217C9198002632E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F220E30C217C9198002632E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F220E310217C919A002632E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F220E311217C919A002632E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F220E32C217C919A002632E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F220E32D217C919A002632E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F220E32F217C919A002632E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NUXHM8C8L;
+				INFOPLIST_FILE = AdapterFrameDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangyongkang.app.AdapterFrameDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F220E330217C919A002632E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NUXHM8C8L;
+				INFOPLIST_FILE = AdapterFrameDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangyongkang.app.AdapterFrameDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F220E332217C919A002632E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NUXHM8C8L;
+				INFOPLIST_FILE = AdapterFrameDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangyongkang.app.AdapterFrameDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdapterFrameDemo.app/AdapterFrameDemo";
+			};
+			name = Debug;
+		};
+		F220E333217C919A002632E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NUXHM8C8L;
+				INFOPLIST_FILE = AdapterFrameDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangyongkang.app.AdapterFrameDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdapterFrameDemo.app/AdapterFrameDemo";
+			};
+			name = Release;
+		};
+		F220E335217C919A002632E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NUXHM8C8L;
+				INFOPLIST_FILE = AdapterFrameDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangyongkang.app.AdapterFrameDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdapterFrameDemo;
+			};
+			name = Debug;
+		};
+		F220E336217C919A002632E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NUXHM8C8L;
+				INFOPLIST_FILE = AdapterFrameDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangyongkang.app.AdapterFrameDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdapterFrameDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F220E2FD217C9197002632E9 /* Build configuration list for PBXProject "AdapterFrameDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F220E32C217C919A002632E9 /* Debug */,
+				F220E32D217C919A002632E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F220E32E217C919A002632E9 /* Build configuration list for PBXNativeTarget "AdapterFrameDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F220E32F217C919A002632E9 /* Debug */,
+				F220E330217C919A002632E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F220E331217C919A002632E9 /* Build configuration list for PBXNativeTarget "AdapterFrameDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F220E332217C919A002632E9 /* Debug */,
+				F220E333217C919A002632E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F220E334217C919A002632E9 /* Build configuration list for PBXNativeTarget "AdapterFrameDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F220E335217C919A002632E9 /* Debug */,
+				F220E336217C919A002632E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F220E2FA217C9197002632E9 /* Project object */;
+}
